@@ -24,7 +24,7 @@ const Post = props => {
   return (
     <div className='post-border'>
       <PostHeader
-        username={post.username}
+        username={post.username}like-section
         thumbnailUrl={post.thumbnailUrl}
       />
       <div className='post-image-wrapper'>
@@ -37,7 +37,7 @@ const Post = props => {
       {/* Is LikeSection getting all the props it needs to work correctly? Please send all the props it needs */}
       {/* Component-ga 'LikeSection' ma heysataa wixii props ah oo ay u baahantahay? Hadaysan heysan, fadlan u dir */}
 
-      <LikeSection incrementLikes={incrementLikes} />
+      <LikeSection incrementLikes={incrementLikes} numberOfLikes={likes} />
 
       {/* Comments also wants its props! */}
       {/* Fadlan u dir props-ka ay 'Comments' component u baahantahay */}
